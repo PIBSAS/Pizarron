@@ -1,0 +1,65 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%; /* Asegura que el body ocupe toda la altura */
+    overflow: hidden; /* Evita el desplazamiento */
+}
+
+.main-container{
+	background-color: rgb(113, 128, 212);
+	width: 100vw; /* Ancho completo del viewport */
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+canvas{
+	width: 100vw; /* Ancho completo del viewport */
+    height: 100vh; /* Alto completo del viewport */
+    background-color: #fff; /* Fondo blanco para el lienzo */
+    display: block; /* Elimina el espacio debajo del lienzo */
+}
+#color-menu, #size-menu, #line-menu {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;   /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-align: center;    /* Alinea el texto en el centro */
+}
+
+#color-menu {
+    top: 10px;
+    left: 10px;
+    background-color: #000;
+}
+
+#size-menu {
+    top: 40px;
+    left: 10px;
+	width: 22px;
+    height: 15px;
+	border-radius: 30%;
+    background-color: #888;
+}
+
+#line-menu {
+	top: 60px;
+    left: 10px;
+    background-color: #ddd; /* Color del fondo del círculo */
+}
+
+.line {
+    width: 2px; /* Ancho de la línea */
+    height: 20px; /* Alto de la línea */
+    background-color: #000; /* Color de la línea */
+    transform: rotate(45deg); /* Rota la línea 45 grados */
+}
